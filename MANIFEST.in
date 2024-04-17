@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include textile_crm *.css
+recursive-include textile_crm *.csv
+recursive-include textile_crm *.html
+recursive-include textile_crm *.ico
+recursive-include textile_crm *.js
+recursive-include textile_crm *.json
+recursive-include textile_crm *.md
+recursive-include textile_crm *.png
+recursive-include textile_crm *.py
+recursive-include textile_crm *.svg
+recursive-include textile_crm *.txt
+recursive-exclude textile_crm *.pyc
