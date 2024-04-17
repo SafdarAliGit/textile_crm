@@ -1,0 +1,272 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CIF-.YYYY.-.#####",
+ "creation": "2024-04-17 20:13:16.452968",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inquiry_id",
+  "inquiry_date",
+  "customer_name",
+  "column_break_trjmh",
+  "customer_address",
+  "amended_from",
+  "city",
+  "country",
+  "column_break_wfi4v",
+  "program_name",
+  "party_po_no",
+  "product_detail_section",
+  "article_no",
+  "submi",
+  "column_break_rgfsf",
+  "pdm_key",
+  "season",
+  "column_break_livsh",
+  "collection",
+  "section_break_0wqmx",
+  "inquiry_items",
+  "section_break_5ffys",
+  "total_packing",
+  "column_break_jcinr",
+  "total_qty",
+  "section_break_knxbr",
+  "inquiry_trim_item",
+  "section_break_57gyk",
+  "packing_and_destination_detail",
+  "section_break_dq6hy",
+  "total_carton",
+  "column_break_4jscp",
+  "total_sticker",
+  "section_break_iabdg",
+  "special_label_attached",
+  "column_break_oylfp",
+  "tech_pack_attached"
+ ],
+ "fields": [
+  {
+   "fieldname": "inquiry_id",
+   "fieldtype": "Data",
+   "label": "Inquiry Id",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "inquiry_date",
+   "fieldtype": "Date",
+   "label": "Inquiry Date"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer_name.customer_primary_address",
+   "fieldname": "customer_address",
+   "fieldtype": "Data",
+   "label": "Customer Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customer Inquiry Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "label": "Program Name"
+  },
+  {
+   "fieldname": "party_po_no",
+   "fieldtype": "Data",
+   "label": "Party PO No"
+  },
+  {
+   "fieldname": "product_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Product Detail"
+  },
+  {
+   "fieldname": "article_no",
+   "fieldtype": "Data",
+   "label": "Article No"
+  },
+  {
+   "fieldname": "submi",
+   "fieldtype": "Data",
+   "label": "SUBMI"
+  },
+  {
+   "fieldname": "pdm_key",
+   "fieldtype": "Data",
+   "label": "PDM Key "
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Data",
+   "label": "Season"
+  },
+  {
+   "fieldname": "collection",
+   "fieldtype": "Data",
+   "label": "Collection"
+  },
+  {
+   "fieldname": "section_break_0wqmx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inquiry_items",
+   "fieldtype": "Table",
+   "label": "Inquiry Items",
+   "options": "Inquiry Items"
+  },
+  {
+   "fieldname": "section_break_5ffys",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inquiry_trim_item",
+   "fieldtype": "Table",
+   "label": "Inquiry Trim Item",
+   "options": "Inquiry Trim Item"
+  },
+  {
+   "fieldname": "section_break_57gyk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "packing_and_destination_detail",
+   "fieldtype": "Table",
+   "label": "Packing And Destination Detail",
+   "options": "Packing And Destination Detail"
+  },
+  {
+   "fieldname": "column_break_trjmh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wfi4v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rgfsf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_livsh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_packing",
+   "fieldtype": "Data",
+   "label": "Total Pcs/Carton",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_qty",
+   "fieldtype": "Data",
+   "label": "Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jcinr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_knxbr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_dq6hy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_carton",
+   "fieldtype": "Data",
+   "label": "Total Carton",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4jscp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_sticker",
+   "fieldtype": "Data",
+   "label": "Total Sticker",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_iabdg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "special_label_attached",
+   "fieldtype": "Check",
+   "label": "Special Label Attached"
+  },
+  {
+   "fieldname": "column_break_oylfp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "tech_pack_attached",
+   "fieldtype": "Check",
+   "label": "Tech Pack Attached"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-17 20:57:01.612075",
+ "modified_by": "Administrator",
+ "module": "Textile CRM",
+ "name": "Customer Inquiry Form",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
