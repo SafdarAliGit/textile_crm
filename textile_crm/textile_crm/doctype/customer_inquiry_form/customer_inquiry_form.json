@@ -16,6 +16,7 @@
   "amended_from",
   "city",
   "country",
+  "total_pcs",
   "column_break_wfi4v",
   "program_name",
   "party_po_no",
@@ -240,12 +241,17 @@
    "fieldname": "tech_pack_attached",
    "fieldtype": "Check",
    "label": "Tech Pack Attached"
+  },
+  {
+   "fieldname": "total_pcs",
+   "fieldtype": "Int",
+   "label": "Total Pcs/Carton"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-17 20:57:01.612075",
+ "modified": "2024-04-18 17:02:24.419317",
  "modified_by": "Administrator",
  "module": "Textile CRM",
  "name": "Customer Inquiry Form",
