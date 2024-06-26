@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:yarn_quality",
+ "creation": "2024-06-26 12:39:44.924430",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "yarn_quality"
+ ],
+ "fields": [
+  {
+   "fieldname": "yarn_quality",
+   "fieldtype": "Data",
+   "label": "Yarn Quality",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-26 12:40:06.252371",
+ "modified_by": "Administrator",
+ "module": "Textile CRM",
+ "name": "Yarn Quality",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
