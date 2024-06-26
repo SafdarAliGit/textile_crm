@@ -33,7 +33,7 @@ frappe.ui.form.on("Item", {
 
     item_group_name: function (frm) {
         items_visibility(frm);
-    },
+    }
 
 });
 

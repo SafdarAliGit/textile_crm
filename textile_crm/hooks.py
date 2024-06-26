@@ -216,5 +216,6 @@ app_license = "MIt"
 #	"textile_crm.auth.validate"
 # ]
 doctype_js = {
-	"Item" : "public/item.js"
+    "Item": "public/item.js",
+    "Purchase Order": "public/purchase_order.js"
 }
