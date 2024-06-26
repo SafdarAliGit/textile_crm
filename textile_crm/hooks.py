@@ -215,6 +215,6 @@ app_license = "MIt"
 # auth_hooks = [
 #	"textile_crm.auth.validate"
 # ]
-doctype_js = {
-	"Item" : "public/item.js"
-}
+# doctype_js = {
+# 	"Item" : "public/item.js"
+# }
