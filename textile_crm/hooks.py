@@ -217,5 +217,6 @@ app_license = "MIt"
 # ]
 doctype_js = {
     "Item": "public/item.js",
-    "Purchase Order": "public/purchase_order.js"
+    "Purchase Order": "public/purchase_order.js",
+    "Material Request": "public/custom_material_request.js"
 }
