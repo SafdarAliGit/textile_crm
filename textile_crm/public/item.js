@@ -1,6 +1,6 @@
 frappe.ui.form.on("Item", {
     refresh: function (frm) {
-        if (frm.doc.item_group_name == "yarn") {
+        if (frm.doc.item_group == "yarn") {
             frm.set_df_property("brand_name", "hidden", 0);
             frm.set_df_property("yarn_count", "hidden", 0);
             frm.set_df_property("yarn_quality", "hidden", 0);
@@ -31,7 +31,7 @@ frappe.ui.form.on("Item", {
         set_item_code_and_name(frm);
     },
 
-    item_group_name: function (frm) {
+    item_group: function (frm) {
         items_visibility(frm);
     }
 
@@ -48,7 +48,7 @@ function set_item_code_and_name(frm) {
 }
 
 function items_visibility(frm) {
-    if (frm.doc.item_group_name == "yarn") {
+    if (frm.doc.item_group == "yarn") {
         frm.set_df_property("brand_name", "hidden", 0);
         frm.set_df_property("yarn_count", "hidden", 0);
         frm.set_df_property("yarn_quality", "hidden", 0);
